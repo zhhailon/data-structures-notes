@@ -2,7 +2,7 @@ This doc is focused on basic data structures and their implementations in C++.
 
 # C++ Review
 
-!include(cpp.md)
+!include(chaps/cpp.md)
 
 # Big-O Notation & Complexity
 

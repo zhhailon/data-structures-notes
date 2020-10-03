@@ -21,6 +21,7 @@ dockerbuild:
 
 docs: $(MAIN_FILE)
 	mkdir -p $@
+	cp _config.yml $@/_config.yml
 	docker run --rm -v $(DIR_NAME):/doc $(DOCKER_TAG) -img docs $< > docs/index.md
 
 pdf: $(DIST_DIR)/pdf/$(OUT_NAME).pdf
