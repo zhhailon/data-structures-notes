@@ -1,7 +1,6 @@
 This doc is focused on basic data structures and their implementations in C++.
 
-# Table of Contents
-
+1. Table of Contents
 {:toc}
 
 # C++ Review
