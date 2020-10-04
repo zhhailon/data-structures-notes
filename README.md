@@ -19,4 +19,4 @@ $$O(n)$$
 
 # Queues
 
-<!-- !rawinclude(katex.html) -->
+!rawinclude(katex.html)
