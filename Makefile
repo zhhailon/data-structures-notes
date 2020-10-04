@@ -21,8 +21,10 @@ dockerbuild:
 
 docs: $(MAIN_FILE)
 	mkdir -p $@
-	cp _config.yml $@/_config.yml
 	docker run --rm -v $(DIR_NAME):/doc $(DOCKER_TAG) -img docs $< > docs/index.md
+	echo "title: 'Data Structures Notes'" > docs/_config.yml
+	echo "markdown: kramdown" >> docs/_config.yml
+	echo "theme: jekyll-theme-primer" >> docs/_config.yml
 
 pdf: $(DIST_DIR)/pdf/$(OUT_NAME).pdf
 

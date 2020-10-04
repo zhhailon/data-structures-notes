@@ -1,1 +1,3 @@
-title: "Notes on Data Structures"
+title: 'Data Structures Notes'
+markdown: kramdown
+theme: jekyll-theme-primer
