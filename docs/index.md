@@ -1,6 +1,6 @@
 This doc is focused on basic data structures and their implementations in C++.
 
-{:toc}
+* TOC {:toc}
 
 # C++ Review
 
