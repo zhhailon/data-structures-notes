@@ -7,13 +7,11 @@
 
 # Big-O Notation & Complexity
 
-$$O(n)$$
+!include(chaps/complexity.md)
 
 # Lists
 
-## Array List
-
-## Linked List
+!include(chaps/lists.md)
 
 # Stacks
 

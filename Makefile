@@ -12,7 +12,6 @@ dockerbuild:
 	docker build -t $(DOCKER_TAG) .
 
 docs: README.md
-	mkdir -p $@
 	docker run --rm -v $(DIR_NAME):/doc $(DOCKER_TAG) -img docs $< > docs/index.md
 
 check:

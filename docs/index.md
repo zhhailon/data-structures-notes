@@ -7,9 +7,11 @@ TBD
 
 # Big-O Notation & Complexity
 
-$$O(n)$$
+TBD
 
 # Lists
+
+TBD
 
 ## Array List
 
