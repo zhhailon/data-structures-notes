@@ -24,7 +24,7 @@ docs: $(MAIN_FILE)
 	docker run --rm -v $(DIR_NAME):/doc $(DOCKER_TAG) -img docs $< > docs/index.md
 	echo "title: Data Structures Notes" > docs/_config.yml
 	echo "markdown: kramdown" >> docs/_config.yml
-	echo "theme: minima" >> docs/_config.yml
+	echo "theme: jekyll-theme-primer" >> docs/_config.yml
 	echo "license: Creative Commons Attribution-ShareAlike 4.0 International" >> docs/_config.yml
 	echo "license-file: https://creativecommons.org/licenses/by-sa/4.0/" >> docs/_config.yml
 
