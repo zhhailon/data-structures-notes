@@ -21,3 +21,5 @@ $$O(n)$$
 # Stacks
 
 # Queues
+
+!rawinclude(katex.html)
