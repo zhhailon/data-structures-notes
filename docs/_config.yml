@@ -1,3 +1,5 @@
-title: 'Data Structures Notes'
+title: Data Structures Notes
 markdown: kramdown
-theme: jekyll-theme-primer
+theme: minima
+license: Creative Commons Attribution-ShareAlike 4.0 International
+license-file: https://creativecommons.org/licenses/by-sa/4.0/
