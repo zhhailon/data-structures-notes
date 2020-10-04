@@ -1,5 +1,3 @@
-This doc is focused on basic data structures and their implementations in C++.
-
 1. Table of Contents
 {:toc}
 
@@ -21,7 +19,7 @@ $$O(n)$$
 
 # Queues
 
-<!-- KaTeX -->
+<!-- <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
     integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
 
@@ -33,4 +31,4 @@ $$O(n)$$
 <!-- To automatically render math in text elements, include the auto-render extension: -->
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
     integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+    onload="renderMathInElement(document.body);"></script> -->

@@ -1,5 +1,3 @@
-This doc is focused on basic data structures and their implementations in C++.
-
 1. Table of Contents
 {:toc}
 
@@ -21,4 +19,4 @@ $$O(n)$$
 
 # Queues
 
-!rawinclude(katex.html)
+<!-- !rawinclude(katex.html) -->
