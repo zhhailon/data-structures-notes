@@ -10,6 +10,8 @@ This doc is focused on basic data structures and their implementations in C++.
 
 # Big-O Notation & Complexity
 
+$$O(n)$$
+
 # Lists
 
 ## Array List

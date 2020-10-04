@@ -10,6 +10,8 @@ TBD
 
 # Big-O Notation & Complexity
 
+$$O(n)$$
+
 # Lists
 
 ## Array List
