@@ -10,7 +10,7 @@ TBD
 
 # Big-O Notation & Complexity
 
-$$O(n)$$
+$O(n)$
 
 # Lists
 
