@@ -1,25 +1,18 @@
+# Data Structures Notes
+
+# Table of Contents
+
 1. Table of Contents
 {:toc}
 
-# C++ Review
+# 1. Introduction to C++
 
-TBD
+## 1.1 Essentials
 
-# Big-O Notation & Complexity
+## 1.2 Objects
 
-TBD
 
-# Lists
-
-TBD
-
-## Array List
-
-## Linked List
-
-# Stacks
-
-# Queues
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
