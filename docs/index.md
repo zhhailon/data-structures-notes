@@ -1,15 +1,11 @@
-# Data Structures Notes
-
-# Table of Contents
-
 * Table of Contents
 {:toc}
 
-# 1 Introduction to C++
+# 1. Introduction to C++
 
-## 1.1 Essentials
+## 1.1. Essentials
 
-## 1.2 Objects
+## 1.2. Objects
 
 
 
