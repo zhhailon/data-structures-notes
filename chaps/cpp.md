@@ -1,4 +1,4 @@
-# 1. Introduction to C++
+# 1 Introduction to C++
 
 ## 1.1 Essentials
 
