@@ -1,18 +1,22 @@
-.DEFAULT_GOAL := docs
+MAIN := notes.md
+CHAPS  := $(wildcard chaps/*.md)
+TARGET := README.md
 
-DOCKER_TAG = pandoc-pp
-DIR_NAME := $(PWD)
+DOCKER_TAG := pandoc-pp
+
+.DEFAULT_GOAL := $(TARGET)
 
 #######################################
 # Build Targets
 
-all: check dockerbuild docs
+all: check dockerbuild $(TARGET)
 
 dockerbuild:
 	docker build -t $(DOCKER_TAG) .
 
-docs: README.md
-	docker run --rm -v $(DIR_NAME):/doc $(DOCKER_TAG) -img docs $< > docs/index.md
+$(TARGET): $(MAIN) $(CHAPS)
+	mkdir -p imgs
+	docker run --rm -v $(PWD):/doc $(DOCKER_TAG) -img imgs $< > $@
 
 check:
 	@if ! which docker 2>&1 > /dev/null; then \
@@ -20,4 +24,4 @@ check:
 	fi
 
 clean:  ## Cleans all temprary files
-	rm -rf docs/index.md
+	rm $(TARGET) imgs/*
