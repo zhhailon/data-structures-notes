@@ -6,17 +6,20 @@
 # Preface
 
 
+
 # 1. Introduction
 
 ## 1.1. Abstract Data Types
 
 ## 1.2. Algorithms
 
+
 # 2. C++ Review
 
 ## 2.1. Essentials
 
 ## 2.2. Objects
+
 
 # 3. Lists
 
@@ -47,7 +50,11 @@ To be consistent with C++ array indexing, we will denote the first position on t
 
 > ***Question:***
 > How to compute the sum of two sparse polynomials?
+
+
+
 # 4. Stacks and Queues
+
 # 5. Trees
 
 ## 5.1. Binary Trees

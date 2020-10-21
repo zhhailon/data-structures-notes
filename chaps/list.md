@@ -27,3 +27,4 @@ To be consistent with C++ array indexing, we will denote the first position on t
 
 > ***Question:***
 > How to compute the sum of two sparse polynomials?
+
