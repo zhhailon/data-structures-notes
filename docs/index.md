@@ -41,7 +41,9 @@ Given another polynomial $$Q_m(x) = q_0 + q_1 x + \ldots + q_m x^m$$ (without lo
 
 What will happen if we use the list representation given a very *sparse* polynomial, for example $$1 + 3 x^{1000} + 2 x^{2000}$$?
 We will need a list of size $$2001$$ in which only $$3$$ elements have non-zero values.
-In this case, we can use *two* lists to store the coefficients and the exponents, that is $$\langle 1, 3, 2 \rangle$$ and $$\langle 0, 1000, 2000 \rangle$$.
+To save space, we can use *two* lists to store the coefficients and the exponents, respectively, that is $$\langle 1, 3, 2 \rangle$$ and $$\langle 0, 1000, 2000 \rangle$$. Each pair of values in the two lists indicates one term in the polynomial.
+As an alternative, we can use a *list of lists* to store the pairs: $$\langle \langle 1, 0\rangle, \langle 3, 1000\rangle, \langle 2, 2000\rangle \rangle$$. 
+In both cases, we only need space for 6 elements.
 
 
 
