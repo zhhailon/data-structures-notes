@@ -39,7 +39,7 @@ It could be represented by a list $$P = \langle p_0, p_1, p_2, \ldots, p_n \rang
 
 Given another polynomial $$Q_m(x) = q_0 + q_1 x + \ldots + q_m x^m$$ (without loss of generality, assume $$m \leq n$$), we can represent the *sum* of $$P_n(x)$$ and $$Q_m(x)$$ by a list $$R=\langle p_0+q_0, p_1+q_1, \ldots, p_m+q_m, p_{m+1}, \ldots, p_n \rangle$$.
 
-What will happen if we use the list representation given the polynomial is very *sparse*, for example $$1 + 3 x^{1000} + 2 x^{2000}$$?
+What will happen if we use the list representation given a very *sparse* polynomial, for example $$1 + 3 x^{1000} + 2 x^{2000}$$?
 We will need a list of size $$2001$$ in which only $$3$$ elements have non-zero values.
 In this case, we can use *two* lists to store the coefficients and the exponents, that is $$\langle 1, 3, 2 \rangle$$ and $$\langle 0, 1000, 2000 \rangle$$.
 
