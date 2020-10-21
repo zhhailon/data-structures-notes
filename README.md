@@ -21,7 +21,7 @@
 
 # 3. Lists
 
-We define a **list** to be a finite, ordered sequence of data items known as **elements**.
+A **list** is a finite, ordered sequence of data items known as **elements**.
 "Ordered" in this definition means that each element has a **position** in the list.
 Each list element has a data type.
 In this chapter, we assume that all elements of the list have the **same** data type, although there is no conceptual objection to lists whose elements have differing data types if the application requires it.
