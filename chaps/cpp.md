@@ -1,5 +1,5 @@
-# 1. Introduction to C++
+# 2. C++ Review
 
-## 1.1. Essentials
+## 2.1. Essentials
 
-## 1.2. Objects
+## 2.2. Objects
