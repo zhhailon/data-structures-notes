@@ -44,7 +44,7 @@ To be consistent with C++ array indexing, we will denote the first position on t
 > 
 > It could be represented by a list $$P = \langle p_0, p_1, p_2, \ldots, p_n \rangle$$ where the subscript indicates the exponent of $$x$$. Given another polynomial $$Q_m(x) = q_0 + q_1 x + \ldots + q_m x^m$$ (without loss of generality, assume $$m \leq n$$), we can represent the *sum* of $$P_n(x)$$ and $$Q_m(x)$$ by a list $$R=\langle p_0+q_0, p_1+q_1, \ldots, p_m+q_m, p_{m+1}, \ldots, p_n \rangle$$.
 >
-> What if the polynomial is a very *sparse*, for example $$1 + 3 x^{1000} + 2 x^{2000}$$? We will need a list of size 2001 in which only 3 elements have non-zero values using the above representation. To save space, we can use *two* lists to store the coefficients and the exponents, respectively, that is $$\langle 1, 3, 2 \rangle$$ and $$\langle 0, 1000, 2000 \rangle$$. Each pair of values in the two lists indicates one term in the polynomial. As an alternative, we can use a *list of lists* to store the pairs: $$\langle \langle 1, 0\rangle, \langle 3, 1000\rangle, \langle 2, 2000\rangle \rangle$$.  In both cases, we only need space for 6 elements.
+> What if the polynomial is a very *sparse*, for example $$1 + 3 x^{1000} + 2 x^{2000}$$? We will need a list of size 2001 in which only 3 elements have non-zero values using the above representation. To save space, we can use *two* lists to store the coefficients and the exponents, respectively, that is $$\langle 1, 3, 2 \rangle$$ and $$\langle 0, 1000, 2000 \rangle$$. Each pair of values in the two lists indicates one term in the polynomial. In this case, we only need space for 6 elements.
 
 > ***Question:***
 > How to compute the sum of two sparse polynomials?
