@@ -7,6 +7,8 @@
 
 !include(chaps/cpp.md)
 
+!include(chaps/array.md)
+
 !include(chaps/list.md)
 
 !include(chaps/stack.md)

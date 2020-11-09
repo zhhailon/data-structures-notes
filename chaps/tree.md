@@ -1,5 +1,8 @@
 # 5. Trees
 
+A tree $$T$$ is defined to be 
+ defines a *one-to-many* relation
+
 ## 5.1. Binary Trees
 
 

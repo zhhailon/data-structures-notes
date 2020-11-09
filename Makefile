@@ -24,4 +24,4 @@ check:
 	fi
 
 clean:  ## Cleans all temprary files
-	rm $(TARGET) imgs/*
+	rm $(TARGET) imgs/* code/*
