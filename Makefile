@@ -1,6 +1,6 @@
 MAIN := notes.md
 CHAPS  := $(wildcard chaps/*.md)
-TARGET := README.md
+TARGET := index.md
 
 PP_EXE := pandoc-pp
 
