@@ -51,6 +51,8 @@ To be consistent with C++ array indexing, we will denote the first position on t
 > ***Question:***
 > How to compute the sum of two sparse polynomials?
 
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ cpp
 #ifndef __LIST_H__
 #define __LIST_H__
@@ -98,7 +100,7 @@ public:
 
 ## 4.1. Array-based Lists
 
-## 4.1. Linked Lists
+## 4.2. Linked Lists
 
 
 # 5. Stacks and Queues
