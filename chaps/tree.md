@@ -6,7 +6,7 @@ A tree $$T$$ is defined to be
 ## 5.1. Binary Trees
 
 
-!dot(tree1.png)(Jake's Pizza Shop)
+!dot(imgs/tree1.png)(Jake's Pizza Shop)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 digraph {
     node [shape=box];
