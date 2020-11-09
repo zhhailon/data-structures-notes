@@ -1,4 +1,4 @@
-# Data Structure Notes
+# Data Structures Notes
 
 ## Prerequisites
 
