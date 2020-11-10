@@ -13,17 +13,17 @@ Each element (except the head and the tail) has exactly one **predecessor** and 
 There might or might not be some relationship between the value of an element and its position in the list.
 For example, **sorted lists** have their elements positioned in ascending order of value, while **unsorted lists** have no particular relationship between element values and positions.
 
-We will use angle brackets ("\\(\langle\\)" and "$$\rangle$$") to denote a list.
-To be consistent with C++ array indexing, we will denote the first position on the list as $$0$$. If there are $$n$$ elements in the list, they are given positions $$0$$ through $$n − 1$$, as $$\langle a_0, a_1, \ldots, a_{n−1}\rangle$$. The subscript indicates an element's position within the list. Using this notation, the empty list would appear as $$\langle \rangle$$.
+We will use angle brackets ("\\(\langle\\)" and "\\(\rangle\\)") to denote a list.
+To be consistent with C++ array indexing, we will denote the first position on the list as \\(0\\). If there are \\(n\\) elements in the list, they are given positions \\(0\\) through \\(n − 1\\), as \\(\langle a_0, a_1, \ldots, a_{n−1}\rangle\\). The subscript indicates an element's position within the list. Using this notation, the empty list would appear as \\(\langle \rangle\\).
 
 > ***Example:***
-> A polynomial in a single variable $$x$$ can always be written in the form:
+> A polynomial in a single variable \\(x\\) can always be written in the form:
 > 
-> $$P_n(x) = p_0 + p_1 x + p_2 x^2 + \ldots + p_n x^n $$
+> \\[P_n(x) = p_0 + p_1 x + p_2 x^2 + \ldots + p_n x^n \\]
 > 
-> It could be represented by a list $$P = \langle p_0, p_1, p_2, \ldots, p_n \rangle$$ where the subscript indicates the exponent of $$x$$. Given another polynomial $$Q_m(x) = q_0 + q_1 x + \ldots + q_m x^m$$ (without loss of generality, assume $$m \leq n$$), we can represent the *sum* of $$P_n(x)$$ and $$Q_m(x)$$ by a list $$R=\langle p_0+q_0, p_1+q_1, \ldots, p_m+q_m, p_{m+1}, \ldots, p_n \rangle$$.
+> It could be represented by a list \\(P = \langle p_0, p_1, p_2, \ldots, p_n \rangle\\) where the subscript indicates the exponent of \\(x\\). Given another polynomial \\(Q_m(x) = q_0 + q_1 x + \ldots + q_m x^m\\) (without loss of generality, assume \\(m \leq n\\)), we can represent the *sum* of \\(P_n(x)\\) and \\(Q_m(x)\\) by a list \\(R=\langle p_0+q_0, p_1+q_1, \ldots, p_m+q_m, p_{m+1}, \ldots, p_n \rangle\\).
 >
-> What if the polynomial is a very *sparse*, for example $$1 + 3 x^{1000} + 2 x^{2000}$$? We will need a list of size 2001 in which only 3 elements have non-zero values using the above representation. To save space, we can use *two* lists to store the coefficients and the exponents, respectively, that is $$\langle 1, 3, 2 \rangle$$ and $$\langle 0, 1000, 2000 \rangle$$. Each pair of values in the two lists indicates one term in the polynomial. In this case, we only need space for 6 elements.
+> What if the polynomial is a very *sparse*, for example \\(1 + 3 x^{1000} + 2 x^{2000}\\)? We will need a list of size 2001 in which only 3 elements have non-zero values using the above representation. To save space, we can use *two* lists to store the coefficients and the exponents, respectively, that is \\(\langle 1, 3, 2 \rangle\\) and \\(\langle 0, 1000, 2000 \rangle\\). Each pair of values in the two lists indicates one term in the polynomial. In this case, we only need space for 6 elements.
 
 > ***Question:***
 > How to compute the sum of two sparse polynomials?
