@@ -36,7 +36,7 @@ Each element (except the head and the tail) has exactly one **predecessor** and 
 There might or might not be some relationship between the value of an element and its position in the list.
 For example, **sorted lists** have their elements positioned in ascending order of value, while **unsorted lists** have no particular relationship between element values and positions.
 
-We will use angle brackets ("$$\langle$$" and "$$\rangle$$") to denote a list.
+We will use angle brackets ("\\(\langle\\)" and "$$\rangle$$") to denote a list.
 To be consistent with C++ array indexing, we will denote the first position on the list as $$0$$. If there are $$n$$ elements in the list, they are given positions $$0$$ through $$n − 1$$, as $$\langle a_0, a_1, \ldots, a_{n−1}\rangle$$. The subscript indicates an element's position within the list. Using this notation, the empty list would appear as $$\langle \rangle$$.
 
 > ***Example:***
@@ -53,54 +53,19 @@ To be consistent with C++ array indexing, we will denote the first position on t
 
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ cpp
-#ifndef __LIST_H__
-#define __LIST_H__
+There are two standard implementations of the `List` ADT: **linked list** in which elements are stored in **nodes** that are chained; and an extension of the array type called a **vector**, which automatically resizes itself to accommodate inserted nodes.
 
-namespace ds {
+## 4.1. Linked Lists
 
-template <typename E> class List { // List ADT
-private:
-  void operator=(const List &) {} // Protect assignment
-  List(const List &) {}           // Protect copy constructor
-public:
-  List() {}          // Default constructor
-  virtual ~List() {} // Base destructor
+### 4.1.1. Singly Linked Lists
 
-  // Remove all items from the list.
-  virtual void clear() = 0;
+#### 4.1.1.1. Sentinel Nodes
 
-  // Append an element at the end of the list.
-  // item: The element to be appended.
-  virtual void append(const E &item) = 0;
+### 4.1.2. Generic `SLList` using Template
 
-  // Insert an element at a given position.
-  // item: The element to be inserted
-  // pos: The position of the element before which to insert
-  virtual void insert(const E &item, int pos) = 0;
+### 4.1.3. Doubly Linked Lists
 
-  // Remove and return the element at a given position.
-  // pos: The position of the element to be removed
-  // Return: the element that was removed.
-  virtual E remove(int pos) = 0;
-
-  // Return: The the element at a given position.
-  virtual const E &get(int pos) const = 0;
-
-  // Return: The number of elements in the list.
-  virtual int length() const = 0;
-};
-
-} // namespace ds
-
-#endif // __LIST_H__
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-## 4.1. Array-based Lists
-
-## 4.2. Linked Lists
+## 4.2. Vectors: the Array-Based Lists
 
 
 # 5. Stacks and Queues

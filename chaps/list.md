@@ -13,7 +13,7 @@ Each element (except the head and the tail) has exactly one **predecessor** and 
 There might or might not be some relationship between the value of an element and its position in the list.
 For example, **sorted lists** have their elements positioned in ascending order of value, while **unsorted lists** have no particular relationship between element values and positions.
 
-We will use angle brackets ("$$\langle$$" and "$$\rangle$$") to denote a list.
+We will use angle brackets ("\\(\langle\\)" and "$$\rangle$$") to denote a list.
 To be consistent with C++ array indexing, we will denote the first position on the list as $$0$$. If there are $$n$$ elements in the list, they are given positions $$0$$ through $$n − 1$$, as $$\langle a_0, a_1, \ldots, a_{n−1}\rangle$$. The subscript indicates an element's position within the list. Using this notation, the empty list would appear as $$\langle \rangle$$.
 
 > ***Example:***
@@ -30,8 +30,16 @@ To be consistent with C++ array indexing, we will denote the first position on t
 
 
 
-!src(code/List.h)(cpp)
+There are two standard implementations of the `List` ADT: **linked list** in which elements are stored in **nodes** that are chained; and an extension of the array type called a **vector**, which automatically resizes itself to accommodate inserted nodes.
 
-## 4.1. Array-based Lists
+## 4.1. Linked Lists
 
-## 4.2. Linked Lists
+### 4.1.1. Singly Linked Lists
+
+#### 4.1.1.1. Sentinel Nodes
+
+### 4.1.2. Generic `SLList` using Template
+
+### 4.1.3. Doubly Linked Lists
+
+## 4.2. Vectors: the Array-Based Lists

@@ -11,6 +11,9 @@ public:
   List() {}          // Default constructor
   virtual ~List() {} // Base destructor
 
+  // Return: The number of elements in the list.
+  virtual int size() const = 0;
+
   // Remove all items from the list.
   virtual void clear() = 0;
 
@@ -19,9 +22,9 @@ public:
   virtual void append(const E &item) = 0;
 
   // Insert an element at a given position.
-  // item: The element to be inserted
   // pos: The position of the element before which to insert
-  virtual void insert(const E &item, int pos) = 0;
+  // item: The element to be inserted
+  virtual void insert(int pos, const E &item) = 0;
 
   // Remove and return the element at a given position.
   // pos: The position of the element to be removed
@@ -31,8 +34,10 @@ public:
   // Return: The the element at a given position.
   virtual const E &get(int pos) const = 0;
 
-  // Return: The number of elements in the list.
-  virtual int length() const = 0;
+  // Replace the element in the list with a new one
+  // pos: The position of the element to be replaced
+  // item: The new element
+  virtual void set(int pos, const E &item) = 0;
 };
 
 } // namespace ds
